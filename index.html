@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>So Much Weather!</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>So Much Weather!</title>
+  </head>
+  <body>
+    <aside id="search">
+      
+      <form id="city-search">
+        <h2>Search:</h2>
+        <input type="text" name="city" id="search-input" />
+        <button id="search-btn">Search</button>
+      </form>
+      
+      <div id="saved-cities"></div>
+    </aside>
+
+    <section id="weather-display">
+      <div id="current-weather">
+        <div id="icon">
+          <h2 id="cityname"></h2>
+        </div>
+        <p>Temperature: <span class="data" id="temp"></span></p>
+        <p>Wind Speed: <span class="data" id="wind"></span></p>
+        <p>Humidity: <span class="data" id="humidity"></span></p>
+        <p>UV Index: <span class="data" id="UV"></span></p>
+      </div>
+      <h3>5-Day Forecast:</h3>
+      <div id="forecast"></div>
+    </section>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</html>
+	</body>
+</html>

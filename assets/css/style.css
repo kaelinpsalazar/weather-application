@@ -1,0 +1,32 @@
+#search{
+    float: left;
+    min-height: 100vh;;
+    min-width: 20%
+}
+
+#current-weather{
+    min-height: 50vh;
+    max-width: 80%;
+    top:0;
+    margin-left: 20%;
+
+}
+#forcast{
+    min-height: 50vh;
+    max-width: 80%;
+    bottom:0;
+    margin-left: 20%;
+} 
+
+.row{
+    flex-wrap: wrap;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#col-md-3{
+    max-height: 60px;
+    max-width: 50px;
+}
+
