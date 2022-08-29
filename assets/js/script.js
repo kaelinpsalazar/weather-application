@@ -76,7 +76,7 @@ function weatherFunction(city){
                     
             forcastHumidity.textContent="Humidity: " +forcast.data[i].rh + "%";
                     
-                    }
+        }
 
     }
 }
@@ -84,4 +84,11 @@ searchBtn.addEventListener('click', function(){
     var city = cityInput.value;
     weatherFunction(city);
 
+    var saveSection=document.getElementById('saved-cities');
+    var liEL = document.createElement('li');
+    var searchSaveBtn= document.createElement('button');
+
+    saveSection.append(liEL);
+    liEL.append(searchSaveBtn);
+    searchSaveBtn.textContent=cityInput.value;
 })
