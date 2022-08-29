@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>So Much Weather!</title>
+    <title>Weather App</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -12,26 +12,20 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="      
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>So Much Weather!</title>
   </head>
   <body>
+    <Header>WEATHER IS COOL</Header>
     <aside id="search">
-      
       <form id="city-search">
         <h2>Search:</h2>
         <input type="text" name="city" id="search-input" />
-        <button id="search-btn">Search</button>
-      </form>
-      
+        <button type="button" class="btn btn-danger">OMG WEATHER</button>
+      </form>      
       <div id="saved-cities"></div>
     </aside>
 
@@ -45,13 +39,56 @@
         <p>Humidity: <span class="data" id="humidity"></span></p>
         <p>UV Index: <span class="data" id="UV"></span></p>
       </div>
-      <h3>5-Day Forecast:</h3>
-      <div id="forecast"></div>
     </section>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <script src="./assets/js/script.js"></script>
-</html>
+    <section id="forcast-display">
+      <div class="container-fluid row justify-content-end" id="forecast">
+        <div id="card-row"class="row col-12 justify-content-evenly">
+          <div id="card-1" class="card col-6 col-md-2">
+            <div class="text-center">
+              <h5 class="card-title"></h2>
+              <h6 class=" mb-2" id="card-temp"></h2>
+              <h6 class="mb-2" id="card-wind"></h2>
+              <h6 class="mb-2" id="card-humidity"></h2>
+            </div>
+          </div>
+          <div id="card-2" class="card col-6 col-md-2">
+            <div class="text-center">
+              <h5 class="card-title"></h2>
+              <h6 class=" mb-2" id="card-temp"></h2>
+              <h6 class="mb-2" id="card-wind"></h2>
+              <h6 class="mb-2" id="card-humidity"></h2>
+            </div>
+          </div>
+          <div id="card-3" class="card col-6 col-md-2">
+            <div class="text-center">
+              <h5 class="card-title"></h2>
+              <h6 class=" mb-2" id="card-temp"></h2>
+              <h6 class="mb-2" id="card-wind"></h2>
+              <h6 class="mb-2" id="card-humidity"></h2>
+            </div>
+          </div>
+          <div id="card-4" class="card col-6 col-md-2">
+            <div class="text-center">
+              <h5 class="card-title"></h2>
+              <h6 class=" mb-2" id="card-temp"></h2>
+              <h6 class="mb-2" id="card-wind"></h2>
+              <h6 class="mb-2" id="card-humidity"></h2>
+            </div>
+          </div>
+          <div id="card-5" class="card col-6 col-md-2">
+            <div class="text-center">
+              <h5 class="card-title"></h2>
+              <h6 class=" mb-2" id="card-temp"></h2>
+              <h6 class="mb-2" id="card-wind"></h2>
+              <h6 class="mb-2" id="card-humidity"></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 	</body>
 </html>
