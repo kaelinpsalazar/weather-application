@@ -31,9 +31,9 @@ function weatherFunction(city){
         });
 
         var currentWeather = function(current){
-            var cityName = document.createElement('h1');
+            var cityName = document.getElementById('cityname');
             cityName.textContent=current.data[0].city_name + " " + date;
-            weatherDashboard.append(cityName);
+            
 
 
             
@@ -43,8 +43,9 @@ function weatherFunction(city){
             uvEl.textContent=current.data[0].uv + "+";
 
         }
+        
 
-
+    
 
     var forcastweatherAPI = 
     "https://api.weatherbit.io/v2.0/forecast/daily?"+apiParams;
@@ -62,11 +63,11 @@ function weatherFunction(city){
     var forcastWeather = function(forcast){
         for (let i = 1; i < 6; i++) {
 
-
-            var cardTitle = document.getElementById("date-"+[i]);
-            var forcastTemp=document.getElementById("temp-"+[i]);
-            var forcastWind= document.getElementById("wind-" + [i]);
-            var forcastHumidity = document.getElementById("humidity-" + [i]);
+            
+            var cardTitle = document.getElementById("date"+[i]);
+            var forcastTemp=document.getElementById("temp"+[i]);
+            var forcastWind= document.getElementById("wind" + [i]);
+            var forcastHumidity = document.getElementById("humidity" + [i]);
                     
             cardTitle.textContent="Forcast: " + forcast.data[i].valid_date;
                     
@@ -77,18 +78,27 @@ function weatherFunction(city){
             forcastHumidity.textContent="Humidity: " +forcast.data[i].rh + "%";
                     
         }
-
+        
     }
 }
 searchBtn.addEventListener('click', function(){
     var city = cityInput.value;
     weatherFunction(city);
-
+    
     var saveSection=document.getElementById('saved-cities');
     var liEL = document.createElement('li');
     var searchSaveBtn= document.createElement('button');
 
     saveSection.append(liEL);
     liEL.append(searchSaveBtn);
+
     searchSaveBtn.textContent=cityInput.value;
+    searchSaveBtn.addEventListener('click', function(){
+        weatherFunction(city);
+    })
+    button.addEventListener('click', function(){
+        cardClass.removeAttr('visibility: hidden');
+    });
+    
 })
+
