@@ -1,3 +1,15 @@
+:root{
+    background-color: black;
+}
+
+
+/* #saved-cities{
+    display:flex;
+    flex-direction: column;
+    
+;} */
+
+
 #search{
     border:solid;
     float: left;
@@ -11,9 +23,9 @@
 }
 
 
+
 #city-search{
-    border-bottom: solid;
-    padding-bottom: 10px;
+    object-position: auto;
 }
 
 
@@ -31,10 +43,17 @@
     border-radius: 10px;
 
 }
+h3{
+    font-size: 1.2vw;
+}
 
-/* .card{
-    visibility: hidden;
-} */
+h2{
+    font-size: 1.5vw;
+}
+.card{
+    margin-top: 70px;
+    margin-bottom: auto;
+}
 
 #forcast-display{
     border: solid;
